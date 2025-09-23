@@ -79,14 +79,42 @@ brew install git
     cd ai-product-cookbook
     ```
 
-2.  **프론트엔드 폴더 생성**
+2.  **.gitignore 파일 생성**
+    저장소에 올릴 필요 없는 파일(IDE 설정, 빌드 결과물 등)을 관리하기 위해 `.gitignore` 파일을 먼저 생성합니다. 아래 명령어를 터미널에 붙여넣으세요.
+
+    ```bash
+    echo '# IDE & System Files
+    .idea/
+    *.iml
+    out/
+    .vscode/
+    .DS_Store
+    Thumbs.db
+
+    # Java / Gradle (for Server)
+    .gradle/
+    build/
+    *.log
+
+    # Frontend / Node
+    node_modules/
+    dist/
+    .out/
+    .env*
+    !.env.example
+    npm-debug.log*
+    yarn-error.log*
+    pnpm-debug.log*' > .gitignore
+    ```
+
+3.  **프론트엔드 폴더 생성**
     서버 폴더는 다음 단계에서 자동으로 생성되므로, `frontend` 폴더만 미리 만들어 줍니다.
 
     ```bash
     mkdir frontend
     ```
 
-3.  **백엔드(서버) 프로젝트 생성 및 추가**
+4.  **백엔드(서버) 프로젝트 생성 및 추가**
     [**start.spring.io**](https://start.spring.io/) 사이트를 이용해 서버 프로젝트의 뼈대를 만듭니다.
 
       * **Project**: `Gradle - Groovy`
@@ -114,11 +142,12 @@ brew install git
 
     ```
     ai-product-cookbook/
+    ├── .gitignore
     ├── frontend/
-    └── server/      <- 압축을 풀어 생성된 폴더
+    └── server/
     ```
 
-4.  **프론트엔드(화면) 파일 생성**
+5.  **프론트엔드(화면) 파일 생성**
     `frontend` 폴더 안에 간단한 시작 페이지 `index.html` 파일을 만듭니다.
 
     ```html
@@ -134,7 +163,7 @@ brew install git
     </html>
     ```
 
-5.  **설정 확인**
+6.  **설정 확인**
 
       * **서버**: IntelliJ로 `server` 폴더를 열고, `ServerApplication.java` 파일을 찾아 실행 ▶️ 하세요. 콘솔에 `Tomcat started on port(s): 8080` 메시지가 보이면 성공입니다.
       * **프론트엔드**: `frontend/index.html` 파일을 웹 브라우저로 열어 환영 메시지가 보이는지 확인하세요.
