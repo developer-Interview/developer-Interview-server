@@ -1,0 +1,22 @@
+# IDE & System Files
+.idea/
+*.iml
+out/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Java / Gradle (for Server)
+.gradle/
+build/
+*.log
+
+# Frontend / Node
+node_modules/
+dist/
+.out/
+.env*
+!.env.example
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
