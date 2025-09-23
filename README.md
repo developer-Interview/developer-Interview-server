@@ -170,17 +170,14 @@ brew install git
 
 -----
 
-## ✅ 다음 단계 (Next Steps)
+네, 알겠습니다. CodeRabbit 설정 부분(7번)만 블로그 링크를 포함하는 방식으로 수정해서 드릴게요.
 
-이제 여러분의 아이디어를 담을 그릇이 준비되었습니다. 앞으로 이 Cookbook에서는 다음 내용들을 다룰 예정입니다.
+---
 
-  * [ ] 첫 번째 API(데이터 요청 창구) 만들기
-  * [ ] AI 프롬프트를 활용해 프론트엔드 화면 디자인하기
-  * [ ] 서버와 프론트엔드를 연결하여 데이터 주고받기
-  * [ ] 실제 클라우드 서버에 배포하기
+### 7. (선택) AI 코드 리뷰어 CodeRabbit 설정하기
 
------
+혼자 개발할 때 코드 품질을 높이고 좋은 습관을 길러주는 'AI 멘토'를 설정하여 코드 리뷰를 자동화할 수 있습니다.
 
-## 🙌 기여 및 질문 (Contributing)
+자세한 설정 방법은 아래 블로그 게시글에 정리해두었으니 참고해 주세요.
 
-이 프로젝트를 더 좋게 만들기 위한 어떤 아이디어나 기여도 환영합니다\! 궁금한 점이나 개선 제안이 있다면 언제든지 [Issues](https://www.google.com/search?q=https://github.com/jsoonworld/ai-product-cookbook/issues)를 통해 알려주세요.
+[**[블로그] 혼자 개발하는 나를 위한 AI 코드 리뷰어, CodeRabbit 설정하기**](https://velog.io/@harperkwon/%ED%98%BC%EC%9E%90-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%8A%94-%EB%82%98%EB%A5%BC-%EC%9C%84%ED%95%9C-AI-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0%EC%96%B4-CodeRabbit-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
